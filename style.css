@@ -50,7 +50,8 @@
  }
  
  #accessLink:hover{
-     color: var(--neu-button)
+     color: var(--neu-button);
+     cursor: pointer;
  }
  
  header h1{
@@ -69,6 +70,7 @@
  button:hover{
      color: var(--neu-button);
      background-color: var(--pri-background);
+     cursor: pointer;
  }
  
  header img#hero_phone{
@@ -198,6 +200,7 @@
  .message button:hover{
      color: var(--neu-button);
      background-color: var(--pri-background);
+     cursor: pointer;
  }
  
  footer{
@@ -334,7 +337,8 @@
      }
  
      main ol::after{
-         top: 526px;
+         top: 697px;
+         height: 226px;
      }
  
      main ol li{
@@ -369,6 +373,7 @@
      grid-template-columns: 383px 94px 635px;
      max-width: 1112px;
      max-height: 647.74px;
+     padding-top:110px;
      }
  
      .founders_mess img{
