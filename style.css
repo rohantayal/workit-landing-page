@@ -7,8 +7,13 @@
     --white: hsl(0,0%,100%);
  
     @font-face {
-     font-family: manrope;
+     font-family: "manrope";
      src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype-variations");
+   }
+ 
+   @font-face {
+     font-family: "frauncis";
+     src: url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format(truetype-variations);
    }
  
  
@@ -25,7 +30,6 @@
      display: flex;
      flex-direction: column;
      height: 380px;
-     border-radius: ;
  }
  
  header div{
@@ -39,6 +43,14 @@
  #accessLink{
      color: var(--white);
      font-family: manrope;
+     font-size: 18px;
+     line-height: 32px;
+     text-decoration: none;
+     border-bottom: 1px solid var(--neu-button);
+ }
+ 
+ #accessLink:hover{
+     color: var(--neu-button)
  }
  
  header h1{
@@ -50,6 +62,13 @@
  header button{
      margin: 15px auto;
      padding: 18px 32px;
+     border: 1px solid var(--neu-button);
+     background-color: var(--neu-button);
+ }
+ 
+ button:hover{
+     color: var(--neu-button);
+     background-color: var(--pri-background);
  }
  
  header img#hero_phone{
@@ -172,8 +191,13 @@
      padding: 18px 36px;
      color: var(--pri-background);
      background-color: var(--neu-button);
-     border: none;
+     border: 1px solid var(--neu-button);
      font-size: 16px;
+ }
+ 
+ .message button:hover{
+     color: var(--neu-button);
+     background-color: var(--pri-background);
  }
  
  footer{
@@ -204,9 +228,6 @@
  
  @media (min-width: 682px){
  
-     main ol{
-         
-     }
  
      main ol li{
          grid-template-columns: 80px 461px;
@@ -262,4 +283,124 @@
      }
  }
  
+ @media (min-width: 1220px){
  
+     header{
+         height: 504px;
+     }
+ 
+     header div{
+         width: 80%;
+         margin: 0 auto;
+         padding: 57.78px;
+     }
+ 
+     header h1{
+         font-size: 80px;
+         font-weight: 700;
+         line-height: 80px;
+         width: 50%;
+         margin: 0 auto;
+     }
+ 
+     header button{
+         margin: 37px auto;
+         font-size: 18px;
+     }
+     header::after{
+         height: 226px;
+         top: 504px;
+     }
+ 
+     header img#hero_phone{
+         width: 767px;
+         height: 441px;
+         translate: 0 12px;
+     }
+ 
+ 
+     main ol{
+         display: flex;
+         justify-content: center;
+         column-gap: 26px;
+         padding: 481px 0 0 0;
+     }
+ 
+     main ol li:before{
+         grid-row: 1/2;
+         grid-column: 1/2;
+         align-self: start;
+         text-align: center;
+     }
+ 
+     main ol::after{
+         top: 526px;
+     }
+ 
+     main ol li{
+         grid-template-columns: 354px;
+         grid-template-rows: 84px 40px 128px;
+         text-align: center;
+         margin: 0;
+         row-gap: 28px;
+         column-gap: 0;
+         max-width: 354px;
+     }
+ 
+     main ol li h2{
+         grid-row: 2/span1;
+         grid-column: 1/span1;
+         text-align: center;
+         font-size: 32px;
+         line-height: 40px;
+     }
+ 
+     main ol li p{
+         grid-row: 3/span1;
+         grid-column: 1/span1;
+         text-align: center;
+         align-self: end;
+     }
+ 
+ 
+ 
+     section.founders_mess{
+         grid-template-rows: 173px 304px 170.74px;
+     grid-template-columns: 383px 94px 635px;
+     max-width: 1112px;
+     max-height: 647.74px;
+     }
+ 
+     .founders_mess img{
+         width: 477px;
+         height: 477px;
+     }
+ 
+     .message{
+         padding: 64px 64.5px;
+         height: 285px;
+     }
+     
+     .message h2, h2{
+         font-size: 56px;
+         line-height: 64px;
+         font-family: "frauncis", Arial, Helvetica, sans-serif;
+         font-weight: 600;
+         margin: 0;
+     }
+     p{
+         font-family: "manrope", Arial, Helvetica, sans-serif;
+         font-size: 18px;
+         line-height: 32px;
+         font-weight: 400;
+     }
+     .message p{
+         margin: 32px 0;
+     }
+ 
+     .message button{
+         margin: 0;
+         padding: 20px 36px;
+     }
+ 
+ }
