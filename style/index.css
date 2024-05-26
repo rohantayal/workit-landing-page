@@ -233,7 +233,7 @@
  
      header{
          
-         background-image: url(./assets/images/bg-pattern-1.svg), url(./assets/images/bg-pattern-2.svg);
+         background-image: url(../assets/images/bg-pattern-1.svg), url(../assets/images/bg-pattern-2.svg);
          background-repeat: no-repeat no-repeat;
          background-position: top 61px left -229px, top 175px right -92px;
      }
@@ -244,7 +244,7 @@
      }
  
      .message::after{
-         content: url(./assets/images/bg-pattern-3.svg);
+         content: url(../assets/images/bg-pattern-3.svg);
          position: absolute;
      }
  
