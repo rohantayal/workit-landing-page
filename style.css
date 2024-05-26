@@ -5,24 +5,12 @@
     
     --pri-text: hsl(271,12%,34%);
     --white: hsl(0,0%,100%);
- 
-    @font-face {
-     font-family: "manrope";
-     src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype-variations");
    }
- 
-   @font-face {
-     font-family: "frauncis";
-     src: url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format(truetype-variations);
-   }
- 
- 
- }
  
  body{
      margin: 0;
      box-sizing: border-box;
-     min-height: 100vh;
+     min-height: 100vh;;
  }
  
  header{
@@ -42,11 +30,14 @@
  
  #accessLink{
      color: var(--white);
-     font-family: manrope;
      font-size: 18px;
      line-height: 32px;
      text-decoration: none;
      border-bottom: 1px solid var(--neu-button);
+ }
+ 
+ #underline{
+     border-bottom: 2.5px solid var(--neu-button);
  }
  
  #accessLink:hover{
@@ -65,6 +56,8 @@
      padding: 18px 32px;
      border: 1px solid var(--neu-button);
      background-color: var(--neu-button);
+     font-size: 16px;
+     font-weight: 700;
  }
  
  button:hover{
@@ -74,7 +67,7 @@
  }
  
  header img#hero_phone{
-     translate: 0 45px;
+     translate: 0 16px;
      width: 320px;
      height: 184px;
      margin: 0 auto;
@@ -126,7 +119,7 @@
      position: absolute;
      display: block;
      background-color: var(--neu-background);
-     top: 912px;
+     top: 968px;
      left: 0;
      border-radius: 0 0 100% 100%;
      z-index: -1;
@@ -136,28 +129,32 @@
      margin: 0 auto;
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 70px 52px 84px;
+     grid-template-rows: 60px 42px 104px;
      max-width: 573px;
      margin-bottom: 40px;
  }
  
+ main ol li:nth-child(2), main ol li:last-child{
+     grid-template-rows: 60px 42px 132px;
+ }
+ 
  main ol li h2{
-     font-size: 30px;
+     font-size: 26px;
      margin: 0;
  }
  
  main ol li p{
-     font-size: 18px;
      margin: 0;
+     color: var(--pri-text)
  }
  
  section.founders_mess{
-     padding: 100px 16px 0 16px;
+     padding: 112px 16px 0 16px;
      display: grid;
      grid-template-rows: 228px 53px 300px;
      grid-template-columns: 1fr;
      max-width: 343px;
-     height: 603px;
+     height: 620px;
      margin: 0 auto;
  }
  
@@ -195,6 +192,7 @@
      background-color: var(--neu-button);
      border: 1px solid var(--neu-button);
      font-size: 16px;
+     font-weight: 700;
  }
  
  .message button:hover{
@@ -204,7 +202,7 @@
  }
  
  footer{
-     margin-top: 60px;
+     margin-top: 128px;
      display: flex;
      flex-direction: column;
  
@@ -237,6 +235,11 @@
          background-repeat: no-repeat no-repeat;
          background-position: top 61px left -229px, top 175px right -92px;
      }
+
+     header div{
+        width: 90%;
+        margin: 0 auto;
+     }
  
      .message::after{
          content: url(./assets/images/bg-pattern-3.svg);
@@ -245,7 +248,7 @@
  
      main ol li{
          grid-template-columns: 80px 461px;
-         grid-template-rows: 52px 56px;
+         grid-template-rows: 52px 56px !important;;
          text-align: left;
          column-gap: 32px;
      }
@@ -307,7 +310,6 @@
  
      header div{
          width: 80%;
-         margin: 0 auto;
          padding: 57.78px;
      }
  
@@ -386,7 +388,7 @@
      grid-template-columns: 383px 94px 635px;
      max-width: 1112px;
      max-height: 647.74px;
-     padding-top:210px;
+     padding-top:228px;
      }
  
      .founders_mess img{
@@ -406,12 +408,10 @@
      .message h2, h2{
          font-size: 56px;
          line-height: 64px;
-         font-family: "frauncis", Arial, Helvetica, sans-serif;
          font-weight: 600;
          margin: 0;
      }
      p{
-         font-family: "manrope", Arial, Helvetica, sans-serif;
          font-size: 18px;
          line-height: 32px;
          font-weight: 400;
@@ -423,6 +423,10 @@
      .message button{
          margin: 0;
          padding: 20px 36px;
+     }
+
+     footer{
+        margin-top: 60px;
      }
  
  }
