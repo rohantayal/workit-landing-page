@@ -388,8 +388,9 @@
          grid-row: 3/span1;
          grid-column: 1/span1;
          text-align: center;
-         align-self: end;
-         font-size: 15px;
+        align-self: start;
+        font-weight: 500;
+        font-size: 15px;
      }
  
  
