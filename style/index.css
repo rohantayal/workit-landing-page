@@ -106,9 +106,10 @@
      width: 48px;
      height: 46px;
      margin: 0 auto;
-     border: 2px solid var(--pri-text);
+     border: 1.5px solid var(--pri-text);
      border-radius: 100%;
      font-size: 36px;
+     font-family: "fraunces";
      
  }
  
